@@ -6,12 +6,12 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
+  const siteLogo = data.site.siteMetadata?.logo || `Ugur Armagan`
   const posts = data.allMarkdownRemark.nodes
 
   if (posts.length === 0) {
     return (
-      <Layout location={location} title={siteTitle}>
+      <Layout location={location} logo={siteLogo}>
         <SEO title="Ugur Armagan" />
         <Bio />
         <p>
@@ -24,7 +24,7 @@ const BlogIndex = ({ data, location }) => {
   }
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location} logo={siteLogo}>
       <SEO title="All posts" />
       <Bio />
       <ol style={{ listStyle: `none` }}>
@@ -69,7 +69,7 @@ export const pageQuery = graphql`
   query {
     site {
       siteMetadata {
-        title
+        logo
       }
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {

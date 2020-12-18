@@ -1,17 +1,12 @@
+const config = require('./config')
+
 module.exports = {
   siteMetadata: {
-    title: `Ugur Armagan`,
-    author: {
-      name: `Ugur Armagan`,
-      summary: `Software engineer based in Chicago`,
-    },
-    description: `these are my writings`,
-    siteUrl: `ugurarmagan.com`,
-    social: {
-      twitter: `ugurarma`,
-      github: `uarmagan`,
-      instagram: `uarmagan`,
-    },
+    title: config.siteTitle,
+    logo: config.siteShortTitle,
+    description: config.siteDescription,
+    author: config.author,
+    siteUrl: config.siteUrl,
   },
   plugins: [
     {
@@ -62,13 +57,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: config.siteTitle,
+        short_name: config.siteShortTitle,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#E58000`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: config.siteIcon,
       },
     },
     `gatsby-plugin-react-helmet`,
