@@ -1,19 +1,18 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "Ugur Armagan",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "The writings of Ugur Armagan",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
+  "author": "Ugur Armagan",
   "dependencies": {
+    "autoprefixer": "^10.1.0",
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.5.0",
     "gatsby-plugin-feed": "^2.7.0",
     "gatsby-plugin-google-analytics": "^2.5.0",
     "gatsby-plugin-manifest": "^2.6.1",
     "gatsby-plugin-offline": "^3.4.0",
+    "gatsby-plugin-postcss": "^3.4.0",
     "gatsby-plugin-react-helmet": "^3.4.0",
     "gatsby-plugin-sharp": "^2.8.0",
     "gatsby-remark-copy-linked-files": "^2.4.0",
@@ -24,19 +23,22 @@
     "gatsby-source-filesystem": "^2.5.0",
     "gatsby-transformer-remark": "^2.10.0",
     "gatsby-transformer-sharp": "^2.6.0",
+    "postcss": "^8.2.1",
     "prismjs": "^1.22.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
+    "tailwindcss": "^2.0.2",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75"
   },
   "devDependencies": {
     "prettier": "2.2.1"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "ugurarmagan.com",
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "tailwind"
   ],
   "license": "0BSD",
   "main": "n/a",
